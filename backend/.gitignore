@@ -1,0 +1,5 @@
+db.json
+hospital.db
+hospital.db-shm
+hospital.db-wal
+node_modules

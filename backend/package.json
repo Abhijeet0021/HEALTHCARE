@@ -1,14 +1,17 @@
 {
-  "name": "healthcare-client",
+  "name": "healthcare-backend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.5.0"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
   }
 }
